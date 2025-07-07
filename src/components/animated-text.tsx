@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion } from "motion/react";
+import { motion, Variants } from "motion/react";
 import { cn } from "@/lib/utils";
 
 interface AnimatedTextProps {
@@ -35,7 +35,7 @@ export default function AnimatedText({
     }),
   };
 
-  const child = {
+  const child: Variants = {
     visible: {
       opacity: 1,
       y: 0,
