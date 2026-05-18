@@ -1,0 +1,8 @@
+{
+  "name": "Front Lakierowany Toruń",
+  "description": "Profesjonalna lakiernia frontów meblowych w Toruniu. Mat, połysk, kolory RAL/NCS. Zamówienia online i szybkie terminy.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": []
+}
