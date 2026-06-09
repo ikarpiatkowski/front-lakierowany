@@ -2,17 +2,14 @@ import { createFileRoute } from "@tanstack/react-router";
 import { z } from "zod";
 
 const newsletterSchema = z.object({
-	email: z
-		.string()
-		.min(1, "E-mail jest wymagany.")
-		.email("Niepoprawny format adresu e-mail."),
+	email: z.email({ error: "Niepoprawny format adresu e-mail." }),
 	website: z.string().optional(),
 });
 
 export const Route = createFileRoute("/api/newsletter")({
 	server: {
 		handlers: {
-			POST: async ({ request }) => {
+			POST: async ({ request }: { request: Request }) => {
 				try {
 					const body = await request.json();
 					const result = newsletterSchema.safeParse(body);

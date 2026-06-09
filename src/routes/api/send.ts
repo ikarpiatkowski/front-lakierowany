@@ -3,10 +3,7 @@ import { z } from "zod";
 
 const sendSchema = z.object({
 	name: z.string().min(2, "Imię i nazwisko jest wymagane"),
-	email: z
-		.string()
-		.min(1, "E-mail jest wymagany.")
-		.email("Niepoprawny format adresu e-mail."),
+	email: z.email({ error: "Niepoprawny format adresu e-mail." }),
 	phone: z.string().min(9, "Podaj poprawny numer telefonu"),
 	message: z.string().optional(),
 	website: z.string().optional(),
@@ -15,7 +12,7 @@ const sendSchema = z.object({
 export const Route = createFileRoute("/api/send")({
 	server: {
 		handlers: {
-			POST: async ({ request }) => {
+			POST: async ({ request }: { request: Request }) => {
 				try {
 					const body = await request.json();
 					const result = sendSchema.safeParse(body);
