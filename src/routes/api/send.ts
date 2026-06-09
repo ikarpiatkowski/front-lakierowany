@@ -3,12 +3,10 @@ import { z } from "zod";
 
 const sendSchema = z.object({
 	name: z.string().min(2, "Imię i nazwisko jest wymagane"),
-	email: z.email({
-		error: (issue) =>
-			issue.input === ""
-				? "E-mail jest wymagany."
-				: "Niepoprawny format adresu e-mail.",
-	}),
+	email: z
+		.string()
+		.min(1, "E-mail jest wymagany.")
+		.email("Niepoprawny format adresu e-mail."),
 	phone: z.string().min(9, "Podaj poprawny numer telefonu"),
 	message: z.string().optional(),
 	website: z.string().optional(),
