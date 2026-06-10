@@ -64,7 +64,8 @@ export function Hero() {
 							className="w-full h-full object-cover"
 							width={800}
 							height={1000}
-							priority
+							loading="eager"
+							fetchPriority="high"
 						/>
 						<div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 to-transparent" />
 						<div className="absolute bottom-4 left-4 right-4 sm:bottom-8 sm:left-8 sm:right-8">

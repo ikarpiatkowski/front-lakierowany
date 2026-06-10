@@ -20,7 +20,8 @@ export function Navbar() {
 						className="w-12 h-12 rounded-xl"
 						width={48}
 						height={48}
-						priority
+						loading="eager"
+						fetchPriority="high"
 					/>
 					<span className="text-white font-display text-lg hidden sm:block">
 						Front<span className="text-brand-primary"> Lakierowany</span>
