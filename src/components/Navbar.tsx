@@ -14,9 +14,11 @@ export function Navbar() {
 					onClick={() => setIsOpen(false)}
 				>
 					<img
-						src="/logo.png"
+						src="/logo192.png"
 						alt="Logo frontu lakierowanego"
 						className="w-12 h-12 rounded-xl"
+						width={48}
+						height={48}
 					/>
 					<span className="text-white font-display text-lg hidden sm:block">
 						Front<span className="text-brand-primary"> Lakierowany</span>

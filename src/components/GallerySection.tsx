@@ -1,21 +1,21 @@
 import { motion } from "motion/react";
 
 const realizations = [
-	{ id: 1, title: "Wysoki połysk", type: "Front Połysk", img: "img4.jpg" },
-	{ id: 2, title: "Mat", type: "Front Mat", img: "image.jpg" },
-	{ id: 3, title: "Ryflowane", type: "Front Ryflowany", img: "img3.jpg" },
-	{ id: 4, title: "Frezowany", type: "Uchwyt Frezowany", img: "img2.jpg" },
+	{ id: 1, title: "Wysoki połysk", type: "Front Połysk", img: "img4.webp" },
+	{ id: 2, title: "Mat", type: "Front Mat", img: "image.webp" },
+	{ id: 3, title: "Ryflowane", type: "Front Ryflowany", img: "img3.webp" },
+	{ id: 4, title: "Frezowany", type: "Uchwyt Frezowany", img: "img2.webp" },
 	{
 		id: 5,
 		title: "MDF 18mm, 36mm",
 		type: "Dostępne grubości",
-		img: "img5.jpg",
+		img: "img5.webp",
 	},
 	{
 		id: 6,
 		title: "Lakier dwustronny",
 		type: "Lakier z każdej strony",
-		img: "img6.jpg",
+		img: "img6.webp",
 	},
 ];
 
@@ -45,6 +45,8 @@ export function Gallery() {
 							src={item.img}
 							alt={item.title}
 							className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+							loading="lazy"
+							decoding="async"
 						/>
 						<div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/10 to-transparent flex flex-col justify-end p-4 md:p-6">
 							<span className="text-brand-primary text-[10px] md:text-xs font-bold uppercase tracking-wider mb-1">

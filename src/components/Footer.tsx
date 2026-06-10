@@ -11,9 +11,13 @@ export function Footer() {
 							className="flex items-center gap-3 mb-6 select-none cursor-pointer w-fit"
 						>
 							<img
-								src="/logo.png"
+								src="/logo192.png"
 								alt="Logo frontu lakierowanego"
 								className="w-12 h-12 rounded-xl"
+								width={48}
+								height={48}
+								loading="lazy"
+								decoding="async"
 							/>
 							<span className="text-white font-display text-xl">
 								Front<span className="text-brand-primary"> Lakierowany</span>
