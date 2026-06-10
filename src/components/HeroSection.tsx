@@ -1,3 +1,4 @@
+import { Image } from "@unpic/react";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { motion } from "motion/react";
 
@@ -57,12 +58,13 @@ export function Hero() {
               alt="Fronty meblowe proces" 
               className="w-full h-full object-cover"
             /> */}
-						<img
+						<Image
 							src="/image.webp"
 							alt="Proces lakierowania frontów meblowych"
 							className="w-full h-full object-cover"
-							decoding="async"
-							fetchPriority="high"
+							width={800}
+							height={1000}
+							priority
 						/>
 						<div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 to-transparent" />
 						<div className="absolute bottom-4 left-4 right-4 sm:bottom-8 sm:left-8 sm:right-8">

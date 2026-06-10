@@ -1,3 +1,4 @@
+import { Image } from "@unpic/react";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -13,12 +14,13 @@ export function Navbar() {
 					className="flex items-center gap-3 select-none cursor-pointer"
 					onClick={() => setIsOpen(false)}
 				>
-					<img
+					<Image
 						src="/logo192.png"
 						alt="Logo frontu lakierowanego"
 						className="w-12 h-12 rounded-xl"
 						width={48}
 						height={48}
+						priority
 					/>
 					<span className="text-white font-display text-lg hidden sm:block">
 						Front<span className="text-brand-primary"> Lakierowany</span>

@@ -1,3 +1,4 @@
+import { Image } from "@unpic/react";
 import { motion } from "motion/react";
 
 const realizations = [
@@ -41,12 +42,13 @@ export function Gallery() {
 						transition={{ delay: i * 0.03 }}
 						className="group relative overflow-hidden rounded-2xl aspect-[4/5] bg-brand-light shadow-md transition-shadow duration-300 group-hover:shadow-2xl"
 					>
-						<img
+						<Image
 							src={item.img}
 							alt={item.title}
 							className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+							width={600}
+							height={750}
 							loading="lazy"
-							decoding="async"
 						/>
 						<div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/10 to-transparent flex flex-col justify-end p-4 md:p-6">
 							<span className="text-brand-primary text-[10px] md:text-xs font-bold uppercase tracking-wider mb-1">

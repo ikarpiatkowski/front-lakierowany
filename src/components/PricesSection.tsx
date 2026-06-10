@@ -1,3 +1,4 @@
+import { Image } from "@unpic/react";
 import { Check } from "lucide-react";
 import { motion } from "motion/react";
 import { PRICING } from "@/lib/constants";
@@ -43,10 +44,13 @@ export function Pricing() {
 									>
 										<td className="px-6 py-4 font-medium">
 											<div className="flex items-center gap-3">
-												<img
+												<Image
 													src={item.image}
 													alt={item.name}
 													className="w-10 h-10 rounded-full object-cover bg-neutral-50 shrink-0"
+													width={40}
+													height={40}
+													loading="lazy"
 												/>
 												<span>{item.name}</span>
 											</div>

@@ -15,11 +15,13 @@ export const Route = createRootRoute({
 				content: "width=device-width, initial-scale=1",
 			},
 			{
-				title: "Front Lakierowany Toruń - Producent Frontów Meblowych na zamówienie",
+				title:
+					"Front Lakierowany Toruń - Producent Frontów Meblowych na zamówienie",
 			},
 			{
 				name: "description",
-				content: "Profesjonalna lakiernia frontów meblowych w Toruniu. Lakierowanie frontów meblowych na zamówienie - wysoka jakość i konkurencyjne ceny. Zapraszamy do kontaktu!",
+				content:
+					"Profesjonalna lakiernia frontów meblowych w Toruniu. Lakierowanie frontów meblowych na zamówienie - wysoka jakość i konkurencyjne ceny. Zapraszamy do kontaktu!",
 			},
 		],
 		links: [

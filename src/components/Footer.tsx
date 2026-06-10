@@ -1,3 +1,4 @@
+import { Image } from "@unpic/react";
 import { COMPANY_INFO } from "@/lib/constants";
 
 export function Footer() {
@@ -10,14 +11,13 @@ export function Footer() {
 							href="#"
 							className="flex items-center gap-3 mb-6 select-none cursor-pointer w-fit"
 						>
-							<img
+							<Image
 								src="/logo192.png"
 								alt="Logo frontu lakierowanego"
 								className="w-12 h-12 rounded-xl"
 								width={48}
 								height={48}
 								loading="lazy"
-								decoding="async"
 							/>
 							<span className="text-white font-display text-xl">
 								Front<span className="text-brand-primary"> Lakierowany</span>
