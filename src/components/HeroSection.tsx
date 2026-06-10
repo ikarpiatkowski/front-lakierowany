@@ -3,14 +3,14 @@ import { motion } from "motion/react";
 
 export function Hero() {
 	return (
-		<section className="relative min-h-screen flex items-center overflow-hidden bg-brand-dark pt-20">
+		<section className="relative min-h-screen flex items-center overflow-hidden bg-brand-dark pt-28 pb-16 lg:pt-20 lg:pb-0">
 			{/* Dynamic Background Elements */}
 			<div className="absolute inset-0 z-0">
 				<div className="absolute top-1/4 -left-20 w-96 h-96 bg-brand-primary/20 rounded-full blur-[120px] animate-pulse" />
 				<div className="absolute bottom-1/4 -right-20 w-80 h-80 bg-brand-primary/10 rounded-full blur-[100px]" />
 			</div>
 
-			<div className="section-container relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+			<div className="section-container relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 				<motion.div
 					initial={{ opacity: 0, x: -50 }}
 					animate={{ opacity: 1, x: 0 }}
@@ -29,7 +29,7 @@ export function Hero() {
 
 					<div className="flex flex-col sm:flex-row gap-4 mb-10">
 						<a href="#zamowienie" className="btn-primary text-lg px-8 py-4">
-							Złóż zamówienie
+							Zamów online
 							<ArrowRight className="w-5 h-5" />
 						</a>
 						<a
@@ -49,7 +49,7 @@ export function Hero() {
 					initial={{ opacity: 0, scale: 0.9, rotate: -2 }}
 					animate={{ opacity: 1, scale: 1, rotate: 0 }}
 					transition={{ duration: 1, delay: 0.2 }}
-					className="relative hidden lg:block"
+					className="relative block w-full max-w-md mx-auto lg:max-w-none lg:w-auto"
 				>
 					<div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/10 aspect-[4/5]">
 						{/* <img 
@@ -63,16 +63,16 @@ export function Hero() {
 							className="w-full h-full object-cover"
 						/>
 						<div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 to-transparent" />
-						<div className="absolute bottom-8 left-8 right-8">
+						<div className="absolute bottom-4 left-4 right-4 sm:bottom-8 sm:left-8 sm:right-8">
 							<div className="p-4 bg-white/10 backdrop-blur-md rounded-2xl border border-white/10">
-								<p className="text-white text-sm font-medium mb-1 tracking-wide uppercase italic">
+								<p className="text-white text-xs sm:text-sm font-medium mb-1 tracking-wide uppercase italic">
 									Najwyższa jakość
 								</p>
 								<div className="flex justify-between items-end">
-									<p className="text-white/60 text-xs uppercase tracking-widest leading-none">
+									<p className="text-white/60 text-[10px] sm:text-xs uppercase tracking-widest leading-none">
 										Termin realizacji
 									</p>
-									<p className="text-brand-primary text-xl font-display leading-none">
+									<p className="text-brand-primary text-lg sm:text-xl font-display leading-none">
 										10 dni
 									</p>
 								</div>
@@ -89,7 +89,7 @@ export function Hero() {
 
 			<a
 				href="#cennik"
-				className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/40 hover:text-white transition-colors cursor-pointer select-none"
+				className="absolute bottom-10 left-1/2 -translate-x-1/2 hidden lg:flex flex-col items-center gap-2 text-white/40 hover:text-white transition-colors cursor-pointer select-none"
 			>
 				<span className="text-[10px] uppercase tracking-[0.3em] font-bold">
 					Przewiń

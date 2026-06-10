@@ -22,7 +22,7 @@ function zodField<T>(schema: z.ZodType<T>) {
 	};
 }
 
-export function OrderForm() {
+export function Form() {
 	const honeypotRef = useRef<HTMLInputElement>(null);
 	const form = useForm({
 		defaultValues: {
@@ -59,13 +59,13 @@ export function OrderForm() {
 	return (
 		<section
 			id="zamowienie"
-			className="section-container bg-brand-dark text-white rounded-3xl overflow-hidden relative"
+			className="section-container bg-brand-dark text-white rounded-3xl overflow-hidden relative py-12"
 		>
 			{/* Decorative background element */}
 			<div className="absolute top-0 right-0 w-1/3 h-full bg-brand-primary/10 -skew-x-12 translate-x-1/2 pointer-events-none" />
 
-			<div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:items-center">
-				<div className="p-6">
+			<div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 lg:items-center">
+				<div className="p-6 pb-0 lg:pb-6">
 					<h2 className="text-4xl md:text-5xl font-display mb-6">
 						Złóż zamówienie
 					</h2>

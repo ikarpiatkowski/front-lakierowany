@@ -22,17 +22,17 @@ const realizations = [
 export function Gallery() {
 	return (
 		<section id="realizacje" className="section-container">
-			<div className="mb-8 flex flex-col  text-center">
+			<div className="mb-8 flex flex-col text-center">
 				<div>
 					<h2 className="text-5xl font-display mb-4">Nasze realizacje</h2>
-					<p className="text-brand-muted max-w-2xl text-lg mx-auto">
+					<p className="text-brand-muted max-w-2xl text-sm sm:text-base md:text-lg mx-auto">
 						Zobacz jak nasze fronty odmieniają wnętrza. Pracujemy na najlepszych
 						komponentach i zachowujemy najwyższe standardy jakości.
 					</p>
 				</div>
 			</div>
 
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+			<div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
 				{realizations.map((item, i) => (
 					<motion.div
 						key={item.id}
@@ -46,11 +46,11 @@ export function Gallery() {
 							alt={item.title}
 							className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
 						/>
-						<div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/10 to-transparent flex flex-col justify-end p-6">
-							<span className="text-brand-primary text-xs font-bold uppercase tracking-wider mb-1">
+						<div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/10 to-transparent flex flex-col justify-end p-4 md:p-6">
+							<span className="text-brand-primary text-[10px] md:text-xs font-bold uppercase tracking-wider mb-1">
 								{item.type}
 							</span>
-							<h3 className="text-white text-xl font-display leading-tight">
+							<h3 className="text-white text-base md:text-xl font-display leading-tight">
 								{item.title}
 							</h3>
 						</div>

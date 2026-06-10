@@ -5,7 +5,7 @@ export const COMPANY_INFO = {
 	contactPerson: "Jarosław",
 	address: "ul. Polna 44/50, 87-100 Toruń",
 	addressShort: "Toruń ul. Polna 44/50",
-	workingHours: "Pn-Pt: 8:00 - 16:00",
+	workingHours: "Poniedziałek - Piątek: \n8:00 - 16:00",
 };
 
 export const PRICING = {
@@ -80,6 +80,6 @@ export const REVIEWS = [
 		author: "Tomasz W.",
 		role: "Klient indywidualny",
 		text: "Szybka realizacja i bardzo miły kontakt z Panem Jarosławem. Fronty wyglądają obłędnie.",
-		rating: 4,
+		rating: 5,
 	},
 ];

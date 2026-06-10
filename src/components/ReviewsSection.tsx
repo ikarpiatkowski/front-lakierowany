@@ -9,7 +9,7 @@ export function Reviews() {
 			<div className="section-container">
 				<div className="text-center mb-8">
 					<h2 className="text-4xl font-display mb-4">Opinie klientów</h2>
-					<p className="text-brand-muted">
+					<p className="text-brand-muted text-sm sm:text-base">
 						Zaufanie stolarzy i klientów indywidualnych z całego regionu.
 					</p>
 				</div>
@@ -21,11 +21,11 @@ export function Reviews() {
 							initial={{ opacity: 0, scale: 0.95 }}
 							whileInView={{ opacity: 1, scale: 1 }}
 							transition={{ delay: i * 0.1 }}
-							className="bg-white p-8 rounded-2xl shadow-sm border border-black/5 relative flex flex-col h-full"
+							className="bg-white p-6 rounded-2xl shadow-sm border border-black/5 relative flex flex-col h-full"
 						>
-							<Quote className="absolute top-4 right-4 text-brand-primary/10 w-12 h-12" />
+							<Quote className="absolute top-4 right-4 text-brand-primary/10 w-8 h-8" />
 
-							<div className="flex gap-1 mb-4 shrink-0">
+							<div className="flex gap-1 mb-4 shrink-0 items-center">
 								{[...Array(5)].map((_, i) => (
 									<Star
 										key={i}
@@ -39,7 +39,7 @@ export function Reviews() {
 								))}
 							</div>
 
-							<div className="flex-grow flex items-center mb-6">
+							<div className="flex-grow flex items-center mb-2">
 								<p className="text-brand-muted italic leading-relaxed">
 									"{review.text}"
 								</p>

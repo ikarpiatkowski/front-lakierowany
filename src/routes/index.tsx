@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 import { Gallery } from "@/components/GallerySection";
 import { Hero } from "@/components/HeroSection";
 import { Navbar } from "@/components/Navbar";
-import { OrderForm } from "@/components/OrderSection";
+import { Form } from "#/components/FormSection";
 import { Pricing } from "@/components/PricesSection";
 import { Reviews } from "@/components/ReviewsSection";
 
@@ -18,7 +18,7 @@ function Home() {
 			<main>
 				<Hero />
 				<Pricing />
-				<OrderForm />
+				<Form />
 				<Gallery />
 				<Reviews />
 				<ContactSection />

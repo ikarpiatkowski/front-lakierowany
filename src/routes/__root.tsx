@@ -15,7 +15,8 @@ export const Route = createRootRoute({
 				content: "width=device-width, initial-scale=1",
 			},
 			{
-				title: "Front Lakierowany Toruń",
+				name: "description",
+				content: "Profesjonalna lakiernia frontów meblowych w Toruniu. Lakierowanie frontów meblowych na zamówienie - wysoka jakość i konkurencyjne ceny. Zapraszamy do kontaktu!",
 			},
 		],
 		links: [
@@ -23,14 +24,28 @@ export const Route = createRootRoute({
 				rel: "stylesheet",
 				href: appCss,
 			},
+			{
+				rel: "icon",
+				href: "/favicon.ico",
+				type: "image/x-icon",
+			},
+			{
+				rel: "apple-touch-icon",
+				href: "/logo192.png",
+			},
+			{
+				rel: "manifest",
+				href: "/manifest.json",
+			},
 		],
+		title: "Front Lakierowany Toruń - Producent Frontów Meblowych na zamówienie",
 	}),
 	shellComponent: RootDocument,
 });
 
 function RootDocument({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang="pl">
+		<html lang="pl" suppressHydrationWarning>
 			<head>
 				<HeadContent />
 			</head>

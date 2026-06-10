@@ -4,8 +4,8 @@ export function Footer() {
 	return (
 		<footer className="bg-brand-dark text-white border-t border-white/5">
 			<div className="max-w-7xl mx-auto px-4 md:px-8 py-12 md:py-16">
-				<div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-					<div className="md:col-span-2">
+				<div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-12 md:gap-12 mb-12">
+					<div className="col-span-1 md:col-span-2">
 						<a
 							href="#"
 							className="flex items-center gap-3 mb-6 select-none cursor-pointer w-fit"
@@ -19,14 +19,14 @@ export function Footer() {
 								Front<span className="text-brand-primary"> Lakierowany</span>
 							</span>
 						</a>
-						<p className="text-white/40 max-w-sm text-sm">
+						<p className="text-white/40 max-w-sm text-[11px] sm:text-xs md:text-sm">
 							Profesjonalna lakiernia frontów meblowych w Toruniu. Gwarantujemy
 							najwyższą jakość wykończenia i terminowość realizacji dla Twoich
 							projektów.
 						</p>
 					</div>
 
-					<div className="md:col-span-2 flex flex-col md:items-end">
+					<div className="col-span-1 md:col-span-2 flex flex-col items-end">
 						<div>
 							<h4 className="font-bold mb-6 text-sm uppercase tracking-widest text-white/80">
 								Zaobserwuj nas
@@ -99,11 +99,11 @@ export function Footer() {
 					</div>
 				</div>
 
-				<div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40 font-medium uppercase tracking-widest">
-					<p>© 2026 {COMPANY_INFO.name}. Wszystkie prawa zastrzeżone.</p>
-					<p className="flex gap-4">
+				<div className="pt-8 border-t border-white/5 flex flex-row justify-between items-center gap-4 text-[9px] sm:text-xs text-white/40 font-medium uppercase tracking-wider sm:tracking-widest">
+					<p>© 2026 {COMPANY_INFO.name}</p>
+					<p>
 						<a href="#" className="hover:text-brand-primary transition-colors">
-							Polityka prywatności
+							Polityka prywatności i RODO
 						</a>
 					</p>
 				</div>
