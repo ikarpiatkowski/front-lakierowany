@@ -217,7 +217,7 @@ export function Form() {
 										Napisz wiadomość
 									</label>
 									<textarea
-										rows={7}
+										rows={8}
 										value={field.state.value}
 										onBlur={field.handleBlur}
 										onChange={(e) => field.handleChange(e.target.value)}
@@ -226,7 +226,7 @@ export function Form() {
 											field.state.meta.errors.length > 0 &&
 												"ring-2 ring-red-500",
 										)}
-										placeholder={`Mat RAL 9008, uchwyt frezowany\n600x724 mm - 2 szt\n600x725 mm - 1 szt\n\nPołysk NCS S 1500-N, lakier dwustronny, mdf 36mm\n600x726 mm - 3szt\n600x727 mm - 4szt`}
+										placeholder={`Mat RAL 9008, uchwyt frezowany\n600x724 mm - 2 szt.\n600x725 mm - 1 szt.\n\nPołysk NCS S 1504-N, lakier dwustronny, mdf 36mm\n600x726 mm - 3 szt.\n600x727 mm - 4 szt.`}
 									/>
 									<p className="min-h-4 mt-0.5 text-xs text-brand-primary">
 										{field.state.meta.errors[0]

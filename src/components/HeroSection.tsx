@@ -17,6 +17,11 @@ export function Hero() {
 					animate={{ opacity: 1, x: 0 }}
 					transition={{ duration: 0.8, ease: "easeOut" }}
 				>
+					<div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-primary/10 border border-brand-primary/20 text-brand-primary text-xs font-bold uppercase tracking-widest mb-6">
+						<span className="w-2 h-2 rounded-full bg-brand-primary animate-ping" />
+						Dostawa w całym kujawsko-pomorskim
+					</div>
+
 					<h1 className="text-6xl md:text-8xl font-display text-white leading-[0.9] mb-8">
 						Fronty <br />
 						<span className="text-brand-primary">Lakierowane</span>
@@ -28,21 +33,20 @@ export function Hero() {
 						projektów.
 					</p>
 
-					<div className="flex flex-col sm:flex-row gap-4 mb-10">
-						<a href="#zamowienie" className="btn-primary text-lg px-8 py-4">
+					<div className="flex flex-col sm:flex-row items-center sm:justify-start gap-4 mb-10">
+						<a
+							href="#zamowienie"
+							className="btn-primary text-lg w-64 justify-center py-4"
+						>
 							Zamów online
 							<ArrowRight className="w-5 h-5" />
 						</a>
 						<a
 							href="#cennik"
-							className="btn-outline border-white text-white hover:bg-white hover:text-brand-dark px-8 py-4"
+							className="btn-outline border-white text-white hover:bg-white hover:text-brand-dark text-lg w-64 justify-center py-4"
 						>
 							Zobacz cennik
 						</a>
-					</div>
-					<div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-primary/10 border border-brand-primary/20 text-brand-primary text-xs font-bold uppercase tracking-widest mb-8">
-						<span className="w-2 h-2 rounded-full bg-brand-primary animate-ping" />
-						Dostawa w całym kujawsko-pomorskim
 					</div>
 				</motion.div>
 
@@ -78,7 +82,7 @@ export function Hero() {
 										Termin realizacji
 									</p>
 									<p className="text-brand-primary text-lg sm:text-xl font-display leading-none">
-										10 dni
+										10 dni roboczych
 									</p>
 								</div>
 							</div>

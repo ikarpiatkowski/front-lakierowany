@@ -61,7 +61,7 @@
 
 @layer components {
   .section-container {
-    @apply max-w-7xl mx-auto px-4 md:px-8 md:py-6 my-12;
+    @apply max-w-7xl mx-auto px-4 md:px-8 md:py-12 my-12;
   }
 
   .glass-card {

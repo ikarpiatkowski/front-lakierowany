@@ -2,20 +2,20 @@ import { Image } from "@unpic/react";
 import { motion } from "motion/react";
 
 const realizations = [
-	{ id: 1, title: "Wysoki połysk", type: "Front Połysk", img: "img4.webp" },
-	{ id: 2, title: "Mat", type: "Front Mat", img: "image.webp" },
-	{ id: 3, title: "Ryflowane", type: "Front Ryflowany", img: "img3.webp" },
-	{ id: 4, title: "Frezowany", type: "Uchwyt Frezowany", img: "img2.webp" },
+	{ id: 1, title: "Front na wysoki połysk", type: "Połysk", img: "img4.webp" },
+	{ id: 2, title: "Front matowy", type: "Mat", img: "image.webp" },
+	{ id: 3, title: "Front frezowany", type: "Frezowany", img: "img3.webp" },
+	{ id: 4, title: "Uchwyt frezowany", type: "Uchwyt", img: "img2.webp" },
 	{
 		id: 5,
-		title: "MDF 18mm, 36mm",
-		type: "Dostępne grubości",
+		title: "Front ryflowany",
+		type: "Ryflowany",
 		img: "img5.webp",
 	},
 	{
 		id: 6,
 		title: "Lakier dwustronny",
-		type: "Lakier z każdej strony",
+		type: "Dwustronny",
 		img: "img6.webp",
 	},
 ];
