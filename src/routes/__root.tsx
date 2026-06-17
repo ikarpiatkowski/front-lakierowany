@@ -20,7 +20,58 @@ export const Route = createRootRoute({
 			{
 				name: "description",
 				content:
-					"Lakiernia frontów meblowych w Toruniu. Lakierowanie frontów MDF na zamówienie - najwyższa jakość i terminowość. Cennik. RAL/ICA/NCS/CS",
+					"Profesjonalna lakiernia frontów lakierowanych / meblowych w Toruniu. Lakierowanie frontów MDF na zamówienie. Kolorystyka: RAL/ICA/NCS. Fronty: mat, połysk, ryflowane i frezowane.",
+			},
+			{
+				name: "keywords",
+				content:
+					"fronty lakierowane Toruń, lakierowanie frontów MDF, lakiernia meblowa Toruń, fronty na zamówienie, fronty kuchenne lakierowane, cennik frontów lakierowanych",
+			},
+			{
+				property: "og:title",
+				content: "Front Lakierowany Toruń - Producent Frontów Lakierowanych",
+			},
+			{
+				property: "og:description",
+				content:
+					"Profesjonalna lakiernia frontów lakierowanych / meblowych w Toruniu. Najwyższa jakość wykończenia, terminowość i konkurencyjne ceny. Sprawdź naszą ofertę i cennik!",
+			},
+			{
+				property: "og:type",
+				content: "website",
+			},
+			{
+				property: "og:url",
+				content: "https://frontlakierowany.pl/",
+			},
+			{
+				property: "og:image",
+				content: "https://frontlakierowany.pl/image.webp",
+			},
+			{
+				property: "og:locale",
+				content: "pl_PL",
+			},
+			{
+				property: "og:site_name",
+				content: "Front Lakierowany Toruń",
+			},
+			{
+				name: "twitter:card",
+				content: "summary_large_image",
+			},
+			{
+				name: "twitter:title",
+				content: "Fronty Lakierowane Toruń | Producent Frontów MDF",
+			},
+			{
+				name: "twitter:description",
+				content:
+					"Lakierowanie frontów meblowych i MDF w Toruniu. Szybki czas realizacji, najwyższa precyzja. Skontaktuj się z nami!",
+			},
+			{
+				name: "twitter:image",
+				content: "https://frontlakierowany.pl/image.webp",
 			},
 		],
 		links: [
@@ -60,7 +111,53 @@ export const Route = createRootRoute({
 				rel: "manifest",
 				href: "/manifest.json",
 			},
+			{
+				rel: "canonical",
+				href: "https://frontlakierowany.pl/",
+			},
 		],
+		scripts: [
+			{
+				type: "application/ld+json",
+				children: JSON.stringify({
+					"@context": "https://schema.org",
+					"@type": "LocalBusiness",
+					"name": "Front Lakierowany Toruń",
+					"image": "https://frontlakierowany.pl/image.webp",
+					"@id": "https://frontlakierowany.pl/#localbusiness",
+					"url": "https://frontlakierowany.pl",
+					"telephone": "+48533305915",
+					"email": "kontakt@frontlakierowany.pl",
+					"address": {
+						"@type": "PostalAddress",
+						"streetAddress": "ul. Polna 44/50",
+						"addressLocality": "Toruń",
+						"postalCode": "87-100",
+						"addressCountry": "PL"
+					},
+					"geo": {
+						"@type": "GeoCoordinates",
+						"latitude": 53.0366627,
+						"longitude": 18.6276229
+					},
+					"openingHoursSpecification": [
+						{
+							"@type": "OpeningHoursSpecification",
+							"dayOfWeek": [
+								"Monday",
+								"Tuesday",
+								"Wednesday",
+								"Thursday",
+								"Friday"
+							],
+							"opens": "08:00",
+							"closes": "16:00"
+						}
+					],
+					"priceRange": "$$"
+				})
+			}
+		]
 	}),
 	shellComponent: RootDocument,
 });
